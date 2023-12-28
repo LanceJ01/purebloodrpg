@@ -8,7 +8,41 @@
 .header {
     width: 100%;
     height: 100vh;
-    background: white;
+    background: #01110a;
     padding-left: 11%;
     padding-right: 8%;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 15px;
+    border-bottom: 1px solid #fafffd;
+}
+
+.top-nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color: #fafffd;
+    font-size: 15px;
+
+}
+
+.top-nav button {
+    background: #c78023;
+    color: #fafffd;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
 }

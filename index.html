@@ -6,14 +6,16 @@
     <title>PureBlood RPG</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> <!-- Font Awesome Icons -->
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="/img/templogo.png" class="logo"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- "X" icon to close sidebar-->
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">GAME</a></li>
@@ -22,8 +24,27 @@
                     <li><a href="">BLOG</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i> <!-- three dashed lines to open sidebar-->
         </nav>
+
+    <div class="title-box">
+        <h1>PUREBLOOD</h1>
+        <p>The Roleplaying Game</p>
+        <a href="" class="hero-btn">Shop Now</a>
+    </div>
     </section>
 
+    <!-- JavaScript for toggling the sidebar menu -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
 </body>
 </html>

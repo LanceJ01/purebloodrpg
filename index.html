@@ -43,7 +43,7 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa eos, animi quos quia placeat debitis laborum impedit nesciunt beatae quo voluptas nobis in delectus? Quisquam dignissimos vitae pariatur cumque nemo.</p>
 
         <div class="row">
-            <div class="game-col flip-card hoverable">
+            <div class="game-col flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-face flip-card-front">
                         <h3>Greyskins</h3>
@@ -54,7 +54,7 @@
                     </div>
                 </div>
             </div>
-            <div class="game-col flip-card hoverable">
+            <div class="game-col flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-face flip-card-front">
                         <h3>Werewolves</h3>
@@ -65,7 +65,7 @@
                     </div>
                 </div>
             </div>
-            <div class="game-col flip-card hoverable">
+            <div class="game-col flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-face flip-card-front">
                         <h3>Vampires</h3>
@@ -90,44 +90,6 @@
     function hideMenu() {
         navLinks.style.right = "-200px";
     }
-
-// Function to handle card flip on mobile scroll
-    function handleIntersection(entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && isMobile()) {
-                entry.target.querySelector('.flip-card-inner').classList.add('flipped');
-                observer.unobserve(entry.target);
-            }
-        });
-    }
-
-// Function to check if the device is in mobile view
-    function isMobile() {
-        return window.innerWidth <= 700; // Adjust the width as needed
-    }
-
-// Create an Intersection Observer for mobile
-    var observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
-
-// Observe each flip-card
-    var flipCards = document.querySelectorAll('.flip-card:not(.hoverable)');
-    flipCards.forEach(card => {
-        observer.observe(card);
-    });
-
-// Add event listeners for card flip on hover for desktop
-    var hoverableCards = document.querySelectorAll('.hoverable');
-        hoverableCards.forEach(card => {
-            card.addEventListener('mouseenter', function () {
-                this.querySelector('.flip-card-inner').classList.add('flipped');
-            });
-
-            card.addEventListener('mouseleave', function () {
-                this.querySelector('.flip-card-inner').classList.remove('flipped');
-            });
-        });
-
-    
 
 </script>
 </body>

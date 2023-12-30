@@ -4,21 +4,15 @@
     font-family: 'Cinzel', serif;
 }
 
-<<<<<<< HEAD
 body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-<<<<<<< HEAD
 html, body {
     max-width: 100%;
     overflow-x: hidden; /* Target html to prevent horizontal scrolling */
 }
 
-=======
->>>>>>> parent of 89cb43f (Prevent scrolling horizontally to hide the sidebar menu.)
-=======
->>>>>>> parent of c497321 (Previous commit did not prevent horizontal scrolling, trying to target html element with this)
 /* First page image */
 .header {
     min-height: 100vh;
@@ -185,10 +179,6 @@ nav .fa{
     transform-origin: center;
 }
 
-.flip-card-inner.flipped {
-    transform: rotateY(180deg);
-}
-
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
@@ -271,7 +261,7 @@ h3 {
     }
 
     .flip-card-back p {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .flip-card-inner {

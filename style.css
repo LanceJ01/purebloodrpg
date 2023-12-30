@@ -4,13 +4,13 @@
     font-family: 'Cinzel', serif;
 }
 
-html body {
-    max-width: 100%;
+body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-body {
-    overflow-x: hidden;
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* Target html to prevent horizontal scrolling */
 }
 
 /* First page image */

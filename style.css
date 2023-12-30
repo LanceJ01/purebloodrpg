@@ -9,6 +9,10 @@ html body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* First page image */
 .header {
     min-height: 100vh;

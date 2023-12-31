@@ -9,20 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> <!-- Font Awesome Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/smoothscroll@0.4.0/smoothscroll.min.js"></script> <!-- SmoothScroll library-->
+
 </head>
 <body>
 
 <!-- HOME -->
-    <section class="header">
+    <section id="home" class="header">
         <nav>
             <a href="index.html"><img src="/img/templogo.png" class="logo"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i> <!-- "X" icon to close sidebar-->
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">GAME</a></li>
-                    <li><a href="">SHOP</a></li>
-                    <li><a href="">ABOUT</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#game">GAME</a></li>
+                    <li><a href="#shop">SHOP</a></li>
+                    <li><a href="#about">ABOUT</a></li>
                     <li><a href="">BLOG</a></li>
                 </ul>
             </div>
@@ -32,13 +34,13 @@
     <div class="title-box">
         <h1>PUREBLOOD</h1>
         <p>The Roleplaying Game</p>
-        <a href="" class="hero-btn">Shop Now</a>
+        <a href="#shop" class="hero-btn">Shop Now</a>
     </div>
     </section>
 
     
 <!-- GAME -->
-    <section class="game">
+    <section id="game" class="game">
         <h1>About the Game</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa eos, animi quos quia placeat debitis laborum impedit nesciunt beatae quo voluptas nobis in delectus? Quisquam dignissimos vitae pariatur cumque nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsum suscipit assumenda corrupti tempora velit, sint natus dolorem similique, voluptatibus harum totam dolore. Enim quod, deserunt praesentium accusantium impedit assumenda. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis laboriosam nobis cumque cum recusandae hic, perferendis ullam deserunt ex maxime sed nostrum sequi impedit ea soluta quibusdam ad, assumenda reprehenderit.</p>
 
@@ -77,7 +79,7 @@
     </section>
 
     <!-- SHOP -->
-    <section class="shop">
+    <section id="shop" class="shop">
         <h1>Core Game Edition</h1>
         
         <div class="row">
@@ -92,7 +94,7 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="about">
+    <section id="about" class="about">
         <h1>About the Team</h1>
         
         <div class="row">
@@ -148,6 +150,24 @@
     }
     function hideMenu() {
         navLinks.style.right = "-200px";
+    }
+
+// Function to smoothly scroll
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            smoothScrollTo(section);
+        }
+    }
+
+    // Smooth scroll function using SmoothScroll
+    function smoothScrollTo(element) {
+        const options = {
+            speed: 800, // Adjust the speed of the scroll
+            easing: 'easeInOutQuad' // Adjust the easing function
+        };
+
+        smoothScroll(element, options);
     }
 
 </script>

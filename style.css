@@ -162,7 +162,24 @@ nav .fa{
     padding-top: 100px;
 }
 
-/* Flip Card effect */
+
+
+/* Heading of second page */
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: #6B0504;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    padding: 10px;
+}
+
+/*-------- Flip Card effect --------*/
 .flip-card {
     perspective: 1000px;
     width: 100%;
@@ -208,21 +225,6 @@ nav .fa{
 .flip-card-back {
     transform: rotateY(180deg);
     background: #6B0504;
-}
-
-/* Heading of second page */
-
-h1 {
-    font-size: 36px;
-    font-weight: 600;
-}
-
-p {
-    color: #6B0504;
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 22px;
-    padding: 10px;
 }
 
 .flip-card-face.flip-card-back p {

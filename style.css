@@ -207,7 +207,7 @@ nav .fa{
 
 .flip-card-back {
     transform: rotateY(180deg);
-    background: #3c0000;
+    background: #6B0504;
 }
 
 /* Heading of second page */
@@ -218,7 +218,7 @@ h1 {
 }
 
 p {
-    color: #3c0000;
+    color: #6B0504;
     font-size: 15px;
     font-weight: bold;
     line-height: 22px;
@@ -299,6 +299,7 @@ h3 {
 .shop-col img {
     width: 100%; /* size of book */
     display: block;
+    border-radius: 10px;
 }
 
 /* Layer over the books */
@@ -313,7 +314,7 @@ h3 {
 }
 
 .layer:hover {
-    background: rgba(60, 0, 0, 0.5);
+    background: rgba(107, 5, 4, 0.5);
 }
 
 .layer h3 {
@@ -354,7 +355,7 @@ h3 {
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background: #3c0000;
+    background: #6B0504;
     padding: 25px;
     cursor: pointer;
     display: flex;
